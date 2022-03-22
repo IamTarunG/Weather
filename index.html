@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather Forecast</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <div
+      class="container flex justify- flex-col items-center w-full leading-loose"
+    >
+      <p class="text-3xl underline font-semibold my-4">Weather Forecast</p>
+      <label for="city" class="text-lg my-2">Enter City Name : </label>
+      <input
+        type="text"
+        id="city"
+        class="outline-blue-600 rounded px-4 border-2 border-gray-800 my-2"
+      />
+      <button
+        class="bg-green-500 py-1 px-4 rounded-md text-white my-2 font-semibold"
+        id="fetchWeather"
+      >
+        Submit
+      </button>
+      <button
+        id="cw"
+        class="bg-blue-600 py-1 px-4 rounded-md text-white my-2 font-semibold"
+      >
+        Current Weather
+      </button>
+      <p id="temp" class="font-semibold"></p>
+      <canvas id="myChart" width="600" height="100"></canvas>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.7.1/dist/chart.min.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
